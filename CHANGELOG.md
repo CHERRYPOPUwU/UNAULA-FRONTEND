@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.4...v1.0.5) (2025-05-12)
+
+
+### Bug Fixes
+
+* **Dockerfile:** Dockerfile for production ([97a69c4](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/97a69c4b1016b76e21f68f92315f50b21bda78d0))
+
 ## [1.0.4](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.3...v1.0.4) (2025-05-12)
 
 
