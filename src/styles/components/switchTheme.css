@@ -1,0 +1,72 @@
+@import url('../variables.css');
+
+
+.toggle-wrap{
+    position: relative;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.toggle-switch{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+
+.toggle{
+    position: relative;
+    width: 88px;
+    height: 40px;
+    border-radius: 24px;
+    background: #F3F3F3;
+    cursor: pointer;
+}
+
+.toggle:after{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 36px;
+    height: 28px;
+    border-radius: 50px ;
+    background: var(--primary400);
+    transition: 0.3s ease-in-out;
+}
+
+.toggle svg{
+    position: absolute;
+    font-size: 40px;
+    z-index: 1;
+}
+
+.toggle svg:first-child{
+    top: 12px;
+    left: 20px;
+}
+
+.toggle svg:last-child{
+    top: 10px;
+    right: 8px;
+}
+
+.toggle-switch:checked ~ .toggle{
+    background: #29333D;
+}
+
+.toggle-switch:checked ~ .toggle:after{
+    transform: translateX(36px);
+    background: var(--primary800);
+}
+
+.toggle-switch:checked ~ .toggle svg:first-child{
+    color: var(--white);
+} 
+
+ .toggle-switch:checked ~ .toggle svg:last-child{
+    color: var(--white);
+}
