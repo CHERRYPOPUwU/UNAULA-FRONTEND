@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.7...v1.0.8) (2025-05-12)
+
+
+### Bug Fixes
+
+* **Docker:** variables env for production ([ed51cc1](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/ed51cc1d81f5e7f1d7fb2914389928e6a33f7e1d))
+
 ## [1.0.7](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.6...v1.0.7) (2025-05-12)
 
 
