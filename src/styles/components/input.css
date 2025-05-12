@@ -1,0 +1,103 @@
+@import url("../variables.css");
+
+.input__content{
+    width: 100%;
+    
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 12px 8px 6px;
+    margin-top:4px;
+    background: 
+    linear-gradient(var(--input-bg) 0 0) padding-box,
+    linear-gradient(var(--input-border) 0 0) border-box; 
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: var(--neutral400);
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+    transition: background-color 200ms ease-in-out,  120ms ease;
+
+    &.success{ 
+        background: 
+            linear-gradient(var(--input-bg) 0 0) padding-box,
+            linear-gradient(to right, var(--primary400) 86%, var(--primary500)) border-box;
+
+        &:focus-visible {
+            outline: 1px solid var(--primary200);
+            color: var(--colorText);
+        }
+
+    }
+
+    &.error{
+        border: 2px solid transparent;
+        background: 
+        linear-gradient(var(--input-bg) 0 0) padding-box,
+        linear-gradient( var(--danger400) 0 0) border-box;
+        
+        &:focus-visible {
+            outline: none;
+            color: var(--colorText);
+        }
+    }
+
+    &:focus-visible {
+        outline: 1px solid var(--neutral400);
+        color: inherit;
+    }
+
+    &::placeholder {
+        color: inherit;
+        transition: color 120ms ease;
+    }
+
+    &:disabled {
+        background-color: var(--neutral300);
+
+        &::placeholder {
+            color: var(--neutral700);
+        }
+    }
+
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .password-toggle svg {
+    font-size: 1.2em;
+    color: var(--neutral400);
+  }
+  
+  .password-toggle:hover svg {
+    color: var(--neutral600);
+  }
+  
+
+.label{
+    &.error{
+        color: var(--danger400) ;
+
+    }
+
+    &.success{
+        color: var(--primary400);
+    }
+}
+.error-message{
+    font-size: 12px;
+    color: var(--danger400);
+}
