@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.10](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.9...v1.0.10) (2025-05-12)
+
+
+### Bug Fixes
+
+* **API:** add config for credentials in auth ([5afe2ce](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/5afe2ce509f955f6e5ee10292cebbc479a925b10))
+
 ## [1.0.9](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.8...v1.0.9) (2025-05-12)
 
 
