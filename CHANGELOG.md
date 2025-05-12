@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.3...v1.0.4) (2025-05-12)
+
+
+### Features
+
+* **Config:** add config nginx ([0d819a2](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/0d819a22f57be3b72d088e437c7087797f970441))
+
 ## [1.0.3](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.2...v1.0.3) (2025-05-12)
 
 
