@@ -1,0 +1,16 @@
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  align-items: center;
+
+}
+
+.header-section h2{
+  font-size: 32px;
+}
+
+.header-section .btn {
+  width: auto;
+  height: auto;
+}
