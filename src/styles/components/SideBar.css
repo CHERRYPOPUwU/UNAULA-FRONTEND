@@ -1,0 +1,159 @@
+@import url("../variables.css");
+
+.sideBar {
+  width: 240px;
+  max-width: 200px;
+  min-width: 240px;
+  max-height: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  background-color: var(--sideBar-bg);
+  border-radius: 8px;
+  gap: 48px;
+  transition: all 220ms ease-in-out;
+  margin: 20px 20px 0 20px;
+}
+
+.sideBar__image {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  width: 100%;
+  height: 100px;
+  background-color: var(--sideBar-img-bg);
+  padding: 2px;
+  border-radius: 4px;
+  overflow: hidden;
+
+  & img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+}
+
+.sideBar__close {
+  position: relative;
+  /* right: -40px; */
+  cursor: pointer;
+}
+
+.sideBar__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sideBar__content--group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sideBar__link {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 4px;
+  gap: 10px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 120ms ease-in-out;
+
+  &.active {
+    background-color: var(--link-bg_active);
+
+    &:hover {
+      background-color: var(--link-bg_active);
+    }
+  }
+
+  &:hover {
+    background-color: var(--link-bg_hover);
+  }
+}
+
+.sideBar__linkTitle {
+  color: var(--neutral600);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* When the side Bar is closed */
+.sideBar.open {
+  max-width: 60px;
+  min-width: 60px;
+
+}
+
+.sideBar.open > .sideBar__image img {
+  visibility: hidden;
+}
+
+.sideBar.open > .sideBar__image > .sideBar__close {
+  transform: translateX(-52px);
+  right: 0;
+}
+
+.sideBar > .sideBar__content > .sideBar__content--group hr {
+  opacity: 0;
+}
+
+.sideBar.open > .sideBar__content > .sideBar__content--group hr {
+  opacity: 1;
+}
+
+.sideBar.open
+  > .sideBar__content
+  > .sideBar__content--group
+  > .sideBar__linkTitle {
+  display: none;
+}
+
+.sideBar.open > .sideBar__content > .sideBar__content--group > .sideBar__link {
+  justify-content: center;
+  position: relative;
+
+  & p {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding: 8px;
+    background-color: var(--primary500);
+    border-radius: 4px;
+    right: -140%;
+    transform: translateY(-10px);
+    transition: transform 180ms ease-in-out, opacity 180ms ease-in-out,
+    visibity 180ms ease-in-out;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 0; 
+      height: 0; 
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid var(--primary500);
+      position: absolute;
+      top: 20%;
+      left: -10px;
+    }
+  }
+
+  &:hover {
+    & p {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
