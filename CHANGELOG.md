@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.0.3](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.2...v1.0.3) (2025-05-12)
+
+
+### Features
+
+* Add App.js for run the app ([c6d857d](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/c6d857d2f73d8aff41d0fadbeb5a7962bf45b99a))
+* Add Layout for the page ([6f36649](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/6f366497d990e083db3e5800dfe7d277e16b7f9e))
+* **Pages:** Add 404 page ([b8ab543](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/b8ab543a238d468611d579d07a5fb81b16a9df04))
+* **Pages:** Add create User page ([592f7d1](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/592f7d1cf8c63f2f7c84bddb7e0d325dffb5d797))
+* **Pages:** Add Login page ([eb0addf](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/eb0addfbaed9e467ef9c18861eff779caa01ec84))
+* **Pages:** Add Projects Pages(Dashboard) ([7973b1a](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/7973b1a88a1fad997aaf3186d9725bef2064f81c))
+
+
+### Bug Fixes
+
+* **API:** fix the variable env to backend connection ([b9f00c1](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/b9f00c14f4c3ebe53439994e16638032267dbae9))
+
 ## [1.0.2](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.1...v1.0.2) (2025-05-12)
 
 
