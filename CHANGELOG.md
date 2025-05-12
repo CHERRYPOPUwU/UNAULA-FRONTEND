@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.6...v1.0.7) (2025-05-12)
+
+
+### Bug Fixes
+
+* **Config:** fix name nginx.config to nginx.conf ([691816c](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/691816c2f0ae47478ff132c689f7dc0cfb4ebde7))
+
 ## [1.0.6](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.5...v1.0.6) (2025-05-12)
 
 
