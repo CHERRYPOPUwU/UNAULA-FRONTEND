@@ -1,0 +1,33 @@
+@import url('./variables.css');
+
+[data-theme="dark"] {
+    --backgroundColor: var(--dark800); 
+    --colorText: white; 
+
+    /* Side Bar */
+    --sideBar-bg: #29333D;
+    --sideBar-img-bg: #29333D; 
+
+
+    /* Form */
+    --form-bg: #29333D;
+    --form-border: rgba(255, 255, 255, 0.00);
+    --link-bg_active: var(--dark800);
+    --link-bg_hover: var(--dark700);
+
+
+    /* Inputs */
+    --input-bg: #29333D;
+    --input-border: var(--neutral600);
+
+    /* Input Search */
+    --inpot-search-bg: var(--dark800);
+    --input--search-btn-bg: #29333D;
+
+    /* Modal */
+    --bg-modal: var(--dark800);
+
+     /* TABLES */
+     --expandable-table-bg: rgba(26, 26, 26, 0.9);
+}
+   

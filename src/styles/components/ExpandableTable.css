@@ -1,0 +1,157 @@
+body {
+    background: rgba(0, 0, 0, 0.9);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row{
+
+    &.info p, .success p, .danger p {
+        text-decoration: none;
+        transition: color 0.2s ease-out;
+    }
+    &.info p {
+        color: rgba(79, 192, 210, 1);
+    }
+    &.info p:hover {
+        color: rgba(38, 134, 149, 1);
+    }
+    &.success p {
+        color: rgba(82, 210, 154, 1);
+    }
+    &.success p:hover {
+        color: rgba(39, 151, 102, 1);
+    }
+    &.danger p {
+        color: rgba(235, 118, 85, 1);
+    }
+    &.danger p:hover {
+        color: rgba(195, 61, 23, 1);
+    }
+
+    &.info {
+        border-left: 3px solid rgba(28, 97, 108, 1);
+    }
+    &.info:hover {
+        border-left: 3px solid rgba(79, 192, 210, 1);
+    }
+    &.success {
+        border-left: 3px solid rgba(29, 110, 75, 1);
+    }
+    &.success:hover {
+        border-left: 3px solid rgba(82, 210, 154, 1);
+    }
+    &.danger {
+        border-left: 3px solid rgba(149, 47, 18, 1);
+    }
+    &.danger:hover {
+        border-left: 3px solid rgba(235, 118, 85, 1);
+    }
+}
+
+/* wrapper */
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    position: relative;
+}
+/* lists */
+.row ul {
+    margin: 0;
+    padding: 0;
+}
+.row ul li {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    list-style: none;
+    display: inline-block;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    .row ul li {
+        font-size: 13px;
+   }
+}
+@media only screen and (max-width: 479px) {
+    .row ul li {
+        font-size: 13px;
+   }
+}
+.title ul li {
+    padding: 15px 13px;
+}
+.row ul li {
+    padding: 5px 10px;
+}
+/* rows */
+.row {
+    padding: 8px 0;
+    height: 30px;
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.row:hover {
+    background-color: var(--Expandable-Table-bg) ;
+    height: 55px;
+}
+
+.row   {
+    &.--list:hover{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .row:hover {
+        height: 85px;
+   }
+}
+@media only screen and (max-width: 359px) {
+    .row:hover {
+        height: 105px;
+   }
+}
+.title-expandedTable {
+    padding: 25px 0 5px 0;
+    height: 45px;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid rgba(255, 255, 255, 0.1);
+}
+.title-expandedTable:hover {
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid rgba(255, 255, 255, 0.1);
+}
+@media only screen and (max-width: 767px) {
+    .title-hide {
+        display: none;
+   }
+}
+
+
+/* more content */
+ul.more-content li {
+    position: relative;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 13px;
+    display: block;
+    height: 50px;
+    width: 100%;
+    color: var(--colorText);
+}
+@media only screen and (max-width: 767px) {
+    ul.more-content li {
+        font-size: 11px;
+   }
+}
+

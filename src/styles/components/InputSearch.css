@@ -1,0 +1,47 @@
+@import url('../variables.css');
+
+.input__search {
+  position: relative;
+}
+
+.input__search input {
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border: 1px solid var(--neutral300);
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  background-color: var(--inpot-search-bg);
+  color: inherit;
+
+  &:focus-visible {
+    outline: 1px solid var(--input--search-btn-bg);
+    width: 350px;
+    padding: 0 20px;
+  }
+}
+
+.btn__search {
+  position: absolute;
+  border: none;
+  right: 0px;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+  background: var(--input--search-btn-bg);
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  color: inherit;
+}
+
+.input__search:hover input {
+  width: 350px;
+  padding: 0 20px;
+}
+
+.btn__search:hover {
+  background: var(--neutral300);
+}

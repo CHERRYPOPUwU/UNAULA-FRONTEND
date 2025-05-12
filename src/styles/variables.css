@@ -1,0 +1,91 @@
+:root{
+
+    /* Primary Colors */
+    --primary100: #F8C36E;
+    --primary200: #F7BD60;
+    --primary300: #F6B650;
+    --primary400: #F3A44B;
+    --primary500: #F09146;
+    --primary600: #E96C3C;
+    --primary700: #E24732;
+    --primary800: #DF352D;
+    --primary900: #000300;
+
+    /* Secondary Color */
+    --secondary100: #D7F1F8;
+    --secondary200: #AFE4F1;
+    --secondary300: #87D6EB;
+    --secondary400: #5FC9E4;
+    --secondary500: #37BBDD;
+    --secondary600: #0488AA;
+    --secondary700: #005577;
+    --secondary800: #002244;
+    --secondary900: #000011;
+
+    /* Netrual */
+    --white : #FFFFFF;
+    --neutral100: #F3F3F3;
+    --neutral200: #E9E9E9;
+    --neutral300: #D2D2D2;
+    --neutral400: #BCBCBC;
+    --neutral500: #A6A6A6;
+    --neutral600: #7D7D7D;
+    --neutral700: #535353;
+    --neutral800: #2A2A2A;
+    --neutral900: #121212;
+    --black : #000000;
+
+    /* Dark Scheme */
+    --dark900: #06060B;
+    --dark800: #18222C;
+    --dark700: #2A434D;
+
+    /* --States-- */
+
+    /* Success */
+    --success600 : #183D1A;
+    --success500 : #388E3C;
+    --success400 : #66BB6A;
+    --success300 : #CAE7CB;
+
+    /* Danger */
+    --danger600 : #560F16;
+    --danger500 : #9B1B27;
+    --danger400 : #DC3545;
+    --danger300 : #F3BCC1;
+
+    /* Warning */
+    --warning600 : #884500;
+    --warning500 : #F57C00;
+    --warning400 : #FFA726;
+    --warning300 : #FFE0B2;
+
+    --backgroundColor: white;
+    --colorText: black;
+
+    /* Side Bar */
+    --sideBar-bg: var(--neutral100);
+    --sideBar-img-bg: var(--white); 
+    --link-bg_active: var(--white);
+    --link-bg_hover: var(--white);
+
+
+    /* Forms */
+    --form-bg: white;
+    --form-border: var(--neutral300);
+
+    /* Inputs */
+    --input-bg: white;
+    --input-border: var(--primary500);
+
+    /* Input Search */
+    --inpot-search-bg: var(--white);
+    --input--search-btn-bg: #f3f3f3;
+
+    /* Modal */
+    --bg-modal: var(--neutral200);
+
+    /* TABLES */
+    --expandable-table-bg: var(--neutral300);
+    
+}

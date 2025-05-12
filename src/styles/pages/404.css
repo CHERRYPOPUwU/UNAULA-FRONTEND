@@ -1,0 +1,28 @@
+.page_404 {
+    width: 100vw;
+    height: 100vh;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  width: 800px;
+  height: 400px;
+  background-position: center;
+}
+
+.title{
+  font-size: 80px;
+}
+
+.link_404 {
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+

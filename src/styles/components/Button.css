@@ -1,0 +1,43 @@
+@import url("../variables.css");
+
+
+.btn{
+    width: 100%;
+    display: flex;
+    max-height: 38px;
+    height: 100%;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background-color: var(--primary500);
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: background-color 120ms ease-in-out;
+
+
+    &.--danger{
+        background-color: var(--danger400);
+
+        &:hover{
+            background-color: var(--danger600);
+        }
+
+    }
+
+    &.--info{
+        background-color: var(--secondary600);
+
+        &:hover{
+            background-color: var(--secondary700);
+        }
+
+    }
+
+
+    &:hover{
+        background-color: var(--primary600);
+    }
+}
