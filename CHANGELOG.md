@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.0.2](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.1...v1.0.2) (2025-05-12)
+
+
+### Features
+
+* **Components:** Add Button Component with styles ([4f3567b](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/4f3567bb1b07694c47273b9c04129ba48495ce22))
+* **Components:** Add CustomDtaTable Component with styles ([fdf7c0c](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/fdf7c0c3ddb534f5595b70888e96132a288f66e3))
+* **Components:** Add HeaderSection Component with styles ([af97d98](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/af97d986c4b0c8c5187ff6eb8e21d7c0a89d7624))
+* **Components:** Add Icon Component ([f8e938c](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/f8e938c8906e291c85eaa0743e0fbc4d97bd71f9))
+* **Components:** Add Input Component with styles ([019a326](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/019a326b3ed8b30cb7f510e06516b5218f7f851b))
+* **Components:** Add Input Search Component with styles ([e84ed5e](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/e84ed5e361209d905cd87c7eb6bbf6a2fb771b5d))
+* **Components:** Add Load Component with styles ([98dab8e](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/98dab8eaa6b92952b160816d43f937601ce72e99))
+* **Components:** Add Modal Component with styles ([cfba99d](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/cfba99deb222cce6279f9e7093534754e350adc5))
+* **Components:** Add Modal styles ([d01414e](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/d01414eadb4c35430a21e535ab30d1c207c6d939))
+* **Components:** Add NavBar Component with styles ([a326a44](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/a326a44207a9b4e080d97d20b1575fccd29209c7))
+* **Components:** Add Select Component with styles ([f695161](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/f69516195830c9a2c593dd15af71acbee02949eb))
+* **Components:** Add SideBar Component with styles ([eae825d](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/eae825d40f2805ed6f9aef96b98b6e512a716cee))
+* **Components:** Add SwitchTheme Component with styles ([f9f0729](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/f9f072939980286e32d43f210047dd288f15ceff))
+* **Styles:** Add layout,theme,variables for styles ([4ad3f71](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/4ad3f71bea24c787daac669fa16cb2777034a4ba))
+
 ## [1.0.1](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.0...v1.0.1) (2025-05-12)
 
 
