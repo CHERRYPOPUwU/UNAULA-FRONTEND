@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.5...v1.0.6) (2025-05-12)
+
+
+### Bug Fixes
+
+* **Config:** Fix vonfig nginx for index redirect ([0ebd187](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/0ebd187c0d14bb6b752ad42eaf76eb2a731da703))
+
 ## [1.0.5](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.4...v1.0.5) (2025-05-12)
 
 
