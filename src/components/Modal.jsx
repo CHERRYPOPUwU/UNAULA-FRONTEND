@@ -8,6 +8,7 @@ export const Modal = ({
   children,
   type = "info", // info | delete | confirm | create | UPDATE
   onConfirm,
+  styleUnique = ""
 }) => {
   if (!isOpen) return null;
 
@@ -26,7 +27,7 @@ export const Modal = ({
             ×
           </button>
         </div>
-        <div className="modal-body">{children}</div>
+        <div className={"modal-body" + styleUnique}>{children}</div>
         <div className="modal-footer">
           {(type === "delete" || type === "confirm" || type === "create" || type === "update") && (
             <>
