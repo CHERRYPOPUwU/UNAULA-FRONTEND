@@ -2,12 +2,12 @@ import { useForm } from 'react-hook-form';
 import { useEffect, useState } from 'react';
 import { Input } from '../../components/Input';
 import Modal from '../../components/Modal';
-import { createProject } from '../../api/projects';
+import { createProject, getProjectById,  updateProject } from '../../api/projects';
 import { Select } from '../../components/Select';
 import { getAsesors } from '../../api/asesors';
 
 
-export const FormProject = ({ open, setOpen, onSuccess, type}) => {
+export const FormProject = ({ open, setOpen, onSuccess, type, projectId }) => {
 
 
   const { register, handleSubmit, reset } = useForm();
@@ -28,21 +28,58 @@ export const FormProject = ({ open, setOpen, onSuccess, type}) => {
     }
   }
 
-  useEffect(()=>{
-    if(!asesors.length){
-      fetchAsesores();
+  const fetchProjectData = async () => {
+    if (type === 'edit' && projectId) {
+      try {
+        const response = await getProjectById(projectId);
+        const data = response.data.data;
+        console.log(data.estado)
+        reset({
+          nombre: data.nombre,
+          tipo: data.tipo,
+          tema: data.tema,
+          estado: data.estado,
+          id_asesor: data.id_asesor,
+        });
+      } catch (error) {
+        console.error('Error fetching project:', error);
+      }
     }
-  })
+  };
+
+  useEffect(()=>{
+    if (!asesors.length) fetchAsesores();
+  },[])
+  useEffect(() => {
+    reset();
+    if (open && type === 'edit') {
+      fetchProjectData();
+    } else if (open && type === 'create') {
+      reset({
+          nombre: '',
+          tipo: '',
+          tema: '',
+          estado: '',
+          id_asesor: '',
+        });
+    }
+  }, [open,type]);
 
   const onSubmit = async (project) => {
     try {
       project.id_asesor = Number(project.id_asesor);
-      await createProject(project); // Espera que se cree correctamente
+
+      if (type === 'edit' && projectId) {
+        await updateProject(projectId, project);
+      } else {
+        await createProject(project);
+      }
+
       reset();
       setOpen(false);
-      setTimeout(() => setInfoOpen(true), 400); // Espera breve antes de abrir modal info
+      setTimeout(() => setInfoOpen(true), 300); 
       if (onSuccess) {
-        onSuccess(); // Refresca la tabla
+        await onSuccess(); 
       }
     } catch (error) {
       console.error("Error al crear el proyecto:", error);
@@ -54,7 +91,7 @@ export const FormProject = ({ open, setOpen, onSuccess, type}) => {
       <Modal
           isOpen={open}
           onClose={() => setOpen(false)}
-          title="Crear Proyecto"
+          title={type=="edit" ? "Editar Proyecto" : "Crear Proyecto"}
           type="create"
           onConfirm={handleSubmit(onSubmit)}
         >
@@ -72,7 +109,7 @@ export const FormProject = ({ open, setOpen, onSuccess, type}) => {
         title="Éxito"
         type="info"
         >
-          <p>Proyecto creado exitosamente.</p>
+          <p>Proyecto {type=="edit" ? "editado" : "creado"} exitosamente.</p>
         </Modal>
 
     </div>

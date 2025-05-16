@@ -10,6 +10,7 @@ import "../../styles/pages/Project.css";
 
 export const ProjectDashboard = () => {
   const [users, setUsers] = useState([]);
+  const [type, setType] = useState([]);
   const [open, setOpen] = useState(false);
   const [id_project, setId_project] = useState();
   const [openInfo, setOpenInfo] = useState(false);
@@ -64,12 +65,10 @@ export const ProjectDashboard = () => {
     }
   };
 
-  
-
   useEffect(() => {
     fetchProjects();
   }, []);
-
+  
   if (loading) {
     return (
       <div className="loader-content">
@@ -85,20 +84,21 @@ export const ProjectDashboard = () => {
           open={open}
           setOpen={setOpen}
           onSuccess={fetchProjects}
-          type={"create"}
+          type={type}
+          projectId={id_project}
       />
       <InfoProject
           open={openInfo}
           id_project={id_project}
           setOpen={setOpenInfo}
       />
-      <HeaderSection title={"Proyectos"} createLabel={"Crear Proyecto"} onCreateClick={() => setOpen(true)}/>
+      <HeaderSection title={"Proyectos"} createLabel={"Crear Proyecto"} onCreateClick={() => {setOpen(true); setType("create")}}/>
       <CustomDataTable
               columns={columns}
               data={users}
               pagination
               onMoreInfo = {(id) => moreInfo(id)}
-              onEdit
+              onEdit ={(id) => { setOpen(true); setType("edit"), setId_project(id)}}
       />
     </>
   );
