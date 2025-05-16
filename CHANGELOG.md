@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.14](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.13...v1.0.14) (2025-05-16)
+
+
+### Features
+
+* **Components:** add some styles and some features for the buttom ([7324132](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/7324132031db913faa9f377f241f7e5efba0e17f))
+* **Styles:** add icons in publics ([86dc926](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/86dc926c3aa7c1bce8a1a33311bf85083ad70a60))
+
 ## [1.0.13](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.12...v1.0.13) (2025-05-16)
 
 
