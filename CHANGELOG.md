@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.0.12](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.11...v1.0.12) (2025-05-16)
+
+
+### Features
+
+* **Asesores:** add asesores view with modules(api, Styles, Dashboard, create) ([3bb703e](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/3bb703e3c06f59d2f3a53081ea2d46155fed456f))
+* **Component:** add style unique for modal ([2aa9075](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/2aa90754fc4cb5dc4b730763b1ee8e37f56b6207))
+
+
+### Bug Fixes
+
+* **Component:** fix navbar profile ([fa4f684](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/fa4f684a8fed449d025db6c79414d00275836998))
+* **Projects:** fix api for project ([556ed06](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/556ed06fa109b61b6b32796b9e78fc511c41726f))
+* **Styles:** fix styles for projects ([19e7901](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/19e790154c265fb5af686012059977d3891816ba))
+
 ## [1.0.11](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.10...v1.0.11) (2025-05-16)
 
 
