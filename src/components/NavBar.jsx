@@ -10,10 +10,10 @@ export function NavBar() {
   const [isOptionsOpen, setIsOptionsOpen] = useState(false);
 
   const {user, logout} = useAuth();
-  
+
   return (
     <nav className="NavBar">
-      <InputSearch />
+      {/* <InputSearch /> */}
       <SwitchTheme />
       <div className={`NavBar__options ${ isOptionsOpen ? "open" : ""}`} onClick={() => setIsOptionsOpen(!isOptionsOpen)}>
         <div className="NavBar__user">
@@ -23,7 +23,7 @@ export function NavBar() {
         <Icon url="outline/chevron-down.svg#chevron-down"/>
       </div>
       <ul className={`NavBar__options--list ${ isOptionsOpen ? "open" : ""}`} onMouseLeave={() => setIsOptionsOpen(!isOptionsOpen)}>
-        <Link to="/perfil"><li>Profile <Icon url="outline/user-circle.svg#user-circle" /></li></Link>
+        {/* <Link to="/perfil"><li>Profile <Icon url="outline/user-circle.svg#user-circle" /></li></Link> */}
         <li onClick={logout}>Log Out <Icon url="outline/logout.svg#logout" /></li>
       </ul>
     </nav>
