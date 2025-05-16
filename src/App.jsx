@@ -5,11 +5,14 @@ import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from "./ProtectedRoute";
 import { ThemeProvider } from "./context/ThemeContext";
 import CreateUser from "./pages/CreateUser";
-import { ProjectDashboard } from "./pages/Projects/Dashboard";
+import { ProjectDashboard } from "./pages/Projects/index";
 import Layout from "./Layout";
 import "./styles/theme.css";
 import { NotFoundPage } from "./pages/404";
 import { UserProvider } from "./context/UserContext";
+import { AsesoresDashboard } from "./pages/Asesores";
+import { CarrerasDashboard } from "./pages/Carreras";
+import { EstudianteDashboard } from "./pages/Estudiantes";
 
 function App() {
   return (
@@ -25,7 +28,9 @@ function App() {
                 <Route element={<Layout />}>
                   <Route path="/" element={<SwitchTheme />} />
                   <Route path="/projects" element={<ProjectDashboard />} />
-                  <Route path="/createUser" element={<CreateUser />} />
+                  <Route path="/asesores" element={<AsesoresDashboard />} />
+                  <Route path="/carreras" element={<CarrerasDashboard />} />
+                  <Route path="/estudiantes" element={<EstudianteDashboard />} />
                 </Route>
               </Route>
 
