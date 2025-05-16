@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.13](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.12...v1.0.13) (2025-05-16)
+
+
+### Features
+
+* **Estudiantes:** add estudiante views with modules (api, Create, Edit, view, Styles) ([aa7b74c](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/aa7b74cde0a38616ef15f40d165ab2e325da0fda))
+
+
+### Bug Fixes
+
+* **Styles:** fix styles for login and sidebar ([4177651](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/4177651ac9f22ee26f673d037f95394a593f5a95))
+
 ## [1.0.12](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.11...v1.0.12) (2025-05-16)
 
 
