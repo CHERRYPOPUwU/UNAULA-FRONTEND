@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.11](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.10...v1.0.11) (2025-05-16)
+
+
+### Features
+
+* **Carreras:** Add carrera view with modules(api.viewAllCarreras, EditCarrera, StylesCarrera) ([ab3e2e2](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/ab3e2e2d5cd286f048094000304cd9086caecd8c))
+* **Styes:** add Icons on publics ([a11a0d8](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/commit/a11a0d855eb7b14b18190b14f9c5970aad0bf100))
+
 ## [1.0.10](https://github.com/CHERRYPOPUwU/UNAULA-FRONTEND/compare/v1.0.9...v1.0.10) (2025-05-12)
 
 
