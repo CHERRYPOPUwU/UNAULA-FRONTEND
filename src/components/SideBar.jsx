@@ -38,8 +38,35 @@ export function SideBar() {
             />
             <p>Proyectos</p>
           </CustomLink>
+          <CustomLink to="/asesores" title="Explore Asesores">
+            <Icon
+              url="solid/asesores.svg#asesores"
+              height={20}
+              width={20}
+              viewbox="0 0 16 12"
+            />
+            <p>Asesores</p>
+          </CustomLink>
+          <CustomLink to="/carreras" title="Explore Carreras">
+            <Icon
+              url="solid/carreras.svg#carreras"
+              height={18}
+              width={18}
+              viewbox="0 0 16 12"
+            />
+            <p>Carreras</p>
+          </CustomLink>
+          <CustomLink to="/estudiantes" title="Explore Estudiantes">
+            <Icon
+              url="solid/card-identification.svg#card-identification"
+              height={18}
+              width={18}
+              viewbox="0 0 16 16"
+            />
+            <p>Estudiantes</p>
+          </CustomLink>
         </div>
-        <div className="sideBar__content--group">
+        {/* <div className="sideBar__content--group">
           <hr />
           <p className="sideBar__linkTitle">Gestion de  Usuarios</p>
           <CustomLink to="/users" title="Manage users">
@@ -51,7 +78,7 @@ export function SideBar() {
             />
             <p>Users</p>
           </CustomLink>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
