@@ -6,12 +6,14 @@ export default function HeaderSection({ title, onCreateClick, createLabel = "Cre
   return (
     <div className="header-section">
       <h2 className="32px">{title}</h2>
-      <Button
-        className="" 
-        onClick={onCreateClick}
-      >
-        {createLabel}
-      </Button>
+      {onCreateClick && (
+        <Button
+          className="" 
+          onClick={onCreateClick}
+        >
+          {createLabel}
+        </Button>
+      )}
     </div>
   );
 }

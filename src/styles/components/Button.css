@@ -28,10 +28,10 @@
     }
 
     &.--info{
-        background-color: var(--secondary600);
+        background-color: var(--secondary200);
 
         &:hover{
-            background-color: var(--secondary700);
+            background-color: var(--secondary100);
         }
 
     }
@@ -40,4 +40,10 @@
     &:hover{
         background-color: var(--primary600);
     }
+}
+
+.table-btn{
+    padding: 0px !important;
+    width: 40px;
+    height: 30px;
 }

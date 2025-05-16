@@ -6,6 +6,7 @@ import { FormProject } from './ModalCreate';
 import { InfoProject } from './ModalInfo';
 import Load from '../../components/load';
 import "../../styles/pages/Project.css";
+import { getInformeById } from '../../api/informes';
 
 
 export const ProjectDashboard = () => {
@@ -65,6 +66,31 @@ export const ProjectDashboard = () => {
     }
   };
 
+  const donwloadInforme = async (id) => {
+
+    const response = await getInformeById(id);
+
+  // Verifica que la respuesta contiene un Blob
+  if (response?.data instanceof Blob) {
+    const blob = response.data;
+    const url = window.URL.createObjectURL(blob);
+
+    // Crea un enlace de descarga
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'informe.pdf'; // puedes cambiar el nombre del archivo
+
+    document.body.appendChild(link);
+    link.click();
+
+    // Limpia el objeto URL y elimina el enlace
+    link.remove();
+    window.URL.revokeObjectURL(url);
+  } else {
+    console.error('No se recibió un Blob válido');
+  }
+
+  }
   useEffect(() => {
     fetchProjects();
   }, []);
@@ -99,6 +125,7 @@ export const ProjectDashboard = () => {
               pagination
               onMoreInfo = {(id) => moreInfo(id)}
               onEdit ={(id) => { setOpen(true); setType("edit"), setId_project(id)}}
+              onDownload={(id) => { donwloadInforme(id)}}
       />
     </>
   );

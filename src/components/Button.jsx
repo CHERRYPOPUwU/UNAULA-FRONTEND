@@ -1,13 +1,13 @@
 import '../styles/components/Button.css';
 
-export function Button({ onClick, children, type = '' }) {
+export function Button({ onClick, children, icon, type = '', style = ''}) {
     return (
       <button
-        className={`btn --${type}`}
+        className={`btn --${type} ${style}`}
         onClick={onClick}
         type=''
       >
-        {children}
+        {icon ? icon : children}
       </button>
     );
   }
